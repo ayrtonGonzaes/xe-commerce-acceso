@@ -1,0 +1,434 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Syne', sans-serif;
+}
+/*
+Extra bold 48 Titulo Saludos.
+bold 36,28,18,16 Titulo Personal info y need help
+semibold 22,18,16 
+medium 19,18 
+regular 17,16 
+*/
+
+h1 {
+    font-weight: 800;
+    font-size: 3em; /*48px*/
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: 600 bold;
+    font-size: 1.375em; /*22px*/
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1.188em; /*19px*/
+    text-transform: uppercase;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.063em; /*17px*/
+}
+
+a {
+    font-size: 400;
+    font-size: 1em; /*16px*/
+    color: #000;
+}
+
+hr {
+    color: #c6c6c6;
+}
+
+.lineaFooter{
+    color: #c6c6c6;
+}
+
+.lineaFooterFinal{
+    color: #c6c6c6; 
+}
+
+header {
+    background-color: aqua;
+}
+
+.alert{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.containerHeader{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.infoPersonal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+
+.colorSpecial {
+    color: #c6c6c6;
+}
+
+.usernameTitle{
+    padding: 30px 0;
+}
+
+.titleSpecial {
+    -webkit-text-stroke: 2px #000;
+    color: transparent;
+}
+
+.personalData{
+    display: flex;
+    padding: 30px 0;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 20%;
+    padding-right: 30px;
+}
+
+.btnList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #c6c6c6;
+    background-color: transparent;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.188em; 
+    cursor: pointer;
+    position: relative;
+}
+
+.btnList::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-radius: 4px;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .btnList:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+.iText{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.iconStyle{
+    font-size: 1.188em; 
+    color: #000;
+}
+
+.arrowUp{
+    display: none;
+}
+
+.btnOut {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    margin-top: 1rem;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    outline: none;
+    border: 1px solid #c6c6c6;
+    color: #000;
+    background: transparent;
+    z-index: 0;
+  }
+
+.btnOut:hover:after {
+    bottom: 0;
+    right: 0;
+}
+
+.btnOut:after {
+    content: "";
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    bottom: 5px;
+    right: 5px;
+    transition: 0.2s;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.personalInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.containerOption{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.option{
+    display: flex;
+    flex-direction: column;
+}
+
+.option label {
+    color: #c6c6c6;
+    padding: 10px 0;
+}
+
+.option input{
+    padding: 7px 25px;
+    border:none;
+    border-radius: 4px;
+    border-bottom: 2px solid #c6c6c6;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+/*.option input:hover{
+    border: 2px solid #c6c6c6;
+    transition: all .3s ease;
+    padding: 7px 25px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}*/
+
+:focus{
+    outline: 1px solid #c6c6c6;
+}
+
+.containerBtnForm{
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btnEdit button {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 25px;
+    font-weight: 600;
+    font-size: 1.063em;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    outline: none;
+    border: 1px solid #c6c6c6;
+    color: #fff;
+    background: transparent;
+    z-index: 0;
+  }
+
+.btnEdit button:hover:after {
+    bottom: 0;
+    right: 0;
+}
+
+.btnEdit button:after {
+    content: "";
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    bottom: 5px;
+    right: 5px;
+    transition: 0.2s;
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+
+.btnDelete button {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 25px;
+    font-weight: 600;
+    font-size: 1.063em;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    outline: none;
+    border: 1px solid #c6c6c6;
+    color: #000;
+    background: transparent;
+    z-index: 0;
+  }
+
+.btnDelete button:hover:after {
+    bottom: 0;
+    right: 0;
+}
+
+.btnDelete button:after {
+    content: "";
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    bottom: 5px;
+    right: 5px;
+    transition: 0.2s;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #000;
+}
+
+
+.needHelp{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.linksHelp{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+
+/*Ediccion del Footer*/
+.containerFooter {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.infoFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.logo p {
+    font-weight: 600;
+}
+
+.linksFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 15px 0;
+}
+
+.linksFooter a {
+    position: relative;
+    text-decoration: none;
+}
+  
+.linksFooter a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-radius: 4px;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+  
+.linksFooter a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.lFooter{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.lineaFooterFinal{
+    display: none;
+}
+
+.derechosFinal{
+    display: none;
+}

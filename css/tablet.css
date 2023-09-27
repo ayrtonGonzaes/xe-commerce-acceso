@@ -1,0 +1,70 @@
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    .containerHeader {
+        width: 95%;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    .usernameTitle h1 {
+        font-size: 2.9em;
+    }
+
+    .container{
+        width: 95%;
+    }
+
+    .list{
+        width: 35%;
+    }
+
+    .containerFooter{
+        width: 100%;
+    }
+
+    .infoFooter{
+        width: 95%;
+    }
+
+    
+
+    .containerFooter{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .infoFooter{
+        width: 95%;
+        padding-top: 50px ;
+    }
+    
+    .linksFooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+        padding: 30px 0;
+    }
+    
+    .lFooter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 51%;
+    }
+    
+    .lineaFooterFinal{
+        display: block;
+    }
+    
+    .derechosFinal{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25px 0;
+    }
+}

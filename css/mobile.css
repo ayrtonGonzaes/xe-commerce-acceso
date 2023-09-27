@@ -1,0 +1,111 @@
+@media screen and (max-width:767px) {
+
+    .containerHeader{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .container{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .usernameTitle h1{
+       font-size: 2.3em;
+    }
+
+    .personalData{
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .list {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .personalInfo{
+        padding-left: 0px;
+    }
+
+    .titlePersonalInfo{
+        display: none;
+    }
+
+    .containerOption {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .containerBtnForm {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btnEdit{
+        width: 95%;
+    }
+
+    .btnEdit button {
+        width: 95%;
+    }
+
+    .btnDelete {
+        width: 95%;
+    }
+
+    .btnDelete button {
+        width: 95%;
+    }
+
+    .containerFooter{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .infoFooter{
+        width: 95%;
+        padding-top: 50px ;
+    }
+    
+    .derechos {
+        display: none;
+    }
+    
+    .linksFooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+        padding: 30px 0;
+    }
+    
+    .lFooter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 51%;
+    }
+    
+    .lineaFooterFinal{
+        display: block;
+    }
+    
+    .derechosFinal{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25px 0;
+    }
+}
