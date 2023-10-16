@@ -2,29 +2,61 @@
 
     .containerHeader{
         width: 95%;
-        margin: 0 auto;
+    }
+    
+    nav{
+        display: none;
     }
 
-    nav {
+    .bag{
         display: none;
+    }
+
+    .hamburgerMenu{
+        width: 100%;
+        padding: 0px;
+    }
+
+    .hamburgerContainerHeader{
+        width: 100%;
+    }
+
+    .containerHamburgerContent{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .section{
+        width: 60%;
+    }
+
+    .img img{
+        height: 20vh;
+    }
+
+    .footerHamburgerContainer{
+        justify-content: center;
+    }
+
+    .textFooter {
+        display: none;
+    }
+
+    .title{
+        display: none;
+    }
+
+    .usernameTitle h1 {
+        font-size: 2.2em;
     }
 
     .container{
         width: 95%;
-        margin: 0 auto;
-    }
-
-    .title {
-        display: none;
-    }
-
-    .usernameTitle h1{
-       font-size: 2.3em;
     }
 
     .personalData{
         flex-direction: column;
-        padding: 0px;
+        gap: 2rem;
     }
 
     .list {
@@ -32,8 +64,31 @@
         padding-right: 0;
     }
 
+    .btnList:focus .arrowUp{
+        display: block;
+        color: #000;
+    }
+
+    .btnList:focus .arrowLeft{
+        display: none;
+    }
+
+    .btnList:nth-child(1) .arrowLeft{
+        display: none;
+    }
+
+    .btnList:nth-child(1) .arrowUp{
+        display: block;
+        color: #000;
+    }
+
     .personalInfo{
+        width: 100%;
         padding-left: 0px;
+    }
+
+    form{
+        width: 100%;
     }
 
     .titlePersonalInfo{
@@ -44,6 +99,11 @@
         display: flex;
         flex-direction: column;
         align-items: normal;
+        width: 100%;
+    }
+
+    .option{
+        width: 100%;
     }
 
     .containerBtnForm {
@@ -52,19 +112,19 @@
     }
 
     .btnEdit{
-        width: 95%;
+        width: 100%;
     }
 
     .btnEdit button {
-        width: 95%;
+        width: 100%;
     }
 
     .btnDelete {
-        width: 95%;
+        width: 100%;
     }
 
     .btnDelete button {
-        width: 95%;
+        width: 100%;
     }
 
     .containerFooter{
