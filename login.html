@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="./css/tablet.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +17,7 @@
 </head>
 <body>
     
-    <header>
+    <header data-aos="fade-down">
 
         <div class="alert">
             <button class="headerExclusive">App exclusiva 33% off <i class="bi bi-arrow-right arrowRight"></i></button>
@@ -250,7 +253,7 @@
 
                 <div class="infoPersonal">
 
-                    <div class="text">
+                    <div class="text" data-aos="fade-right">
                         <nav class="navInfoPersonal">
                             <a href="#">Inicio <i class="bi bi-arrow-right"></i></a>
                             <a href="#">Perfil <i class="bi bi-arrow-right"></i></a>
@@ -258,14 +261,14 @@
                         <h3>Informacion Personal</h3>
                     </div>
 
-                    <div class="title">
+                    <div class="title" data-aos="fade-left">
                         <h2>Informacion Personal</h2>
                     </div>
                 </div>
 
                 <hr>
 
-                <div class="usernameTitle">
+                <div class="usernameTitle" data-aos="zoom-in">
                     <h1><span class="titleSpecial">Bienvenido,</span> Usuario</h1>
                 </div>
 
@@ -273,7 +276,7 @@
 
                 <div class="personalData">
 
-                    <div class="list">
+                    <div class="list" data-aos="fade-right">
                        
                         <button class="btnList">
                             <i class="bi bi-person-fill iconBtn" disabled></i> 
@@ -330,7 +333,7 @@
 
                     <hr>
 
-                    <div class="personalInfo">
+                    <div class="personalInfo" data-aos="fade-left">
 
                         <div class="titlePersonalInfo">
                             <h2>Informacion Personal</h2>
@@ -432,7 +435,7 @@
     </main>
 
 
-    <footer>
+    <footer data-aos="fade-up">
 
         <div class="containerFooter">
         
@@ -496,5 +499,15 @@
     
 
     <script src="./js/login.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration:1500,
+            once:true
+        });
+    </script>
+
 </body>
 </html>
